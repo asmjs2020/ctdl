@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="javascript.js" ></script>
+</head>
+
+<body>
+
+    <div id="ketQua"></div>
+    <script>
+        var nodeKetQua = document.getElementById("ketQua");
+        var htmlKetQua = "";
+        htmlKetQua = htmlKetQua + `<p>Bài 1: Tổng  7 và 6 là: ${tinhTong(7,6)} và hiệu là: ${tinhHieu(7,6)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 2: Tích 5 và 5 là: ${tinhTich(5,5)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 3: Thương 5 và 5 <br> ${tinhThuong(5,5)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 4: bình Phương 2 số 3 là:  ${tinhBinhPhuong(3)} và  số 5 là: ${tinhBinhPhuong(5)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 5: Số lớn nhất trong hai số 5 và 5 là: ${soLonNhat(5,5)}<br> và số nhỏ nhất là: ${soNhoNhat(2,3)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 6: Trung bình 2 số dư khi 5 và 4 là: ${tinhTrungBinh(5,4)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 7: Trung bình 2 số dư khi n1(3,4) / n2(6,5) là: ${tinhTrungBinh(3,4) / tinhTrungBinh(6,5)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 8: Trung bình 2 số dư khi n2(6,5) / n1(8,5)  là: ${tinhTrungBinh(6,5) / tinhTrungBinh(8,5)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 9: số có chia hết cho số còn lại không: 10 / 5 là: ${kiemTraSoChia(10,5)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 10: kiểm tra xem n1 có chia hết cho n2 không 8 / 3: ${kiemTraSoChia(8,5)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 11: kiểm tra xem n2 có chia hết cho n1 không 3 / 5: ${kiemTraSoChia(3,5)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 12: Chu vi hình chữ nhật của 2 và 3 là: ${chuViChuNhat(2,3)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 13: Diện tích hình chữ nhật của 3 và 4 là: ${dienTichChuNhat(3,4)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 14: chu vi và diện tích một hình chữ nhật có cạnh n1 và n2 là: ${chuViChuNhat(6,7)} , ${dienTichChuNhat(6,7)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 15: Chu vi hình tròn là: ${chuViHinhTron(4)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 16: Diện tích hình tròn là: ${dienTichHinhTron(3)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 17: chu vi và diện tích một hình tròn có bán kính là n1: ${chuViHinhTron(6)} , ${dienTichHinhTron(6)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 18: chu vi và diện tích một hình tròn có bán kính là n2: ${chuViHinhTron(4)} , ${dienTichHinhTron(4)}</p>`;
+        htmlKetQua = htmlKetQua + `<p><h2>Chuỗi</h2></p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 1: Sau khi nối chuỗi s1 s2 là: ${noiChuoi("Hello", " World")}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 2: Sau khi nối chuỗi s1 s2 s3 s4 s5 là: ${noiChuoiHam2("Xin ", "Chào", " Thầy", " Và", " Các Bạn")}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 3: In Hoa : ${inHoa("Hello World")}</p>`;       
+        htmlKetQua = htmlKetQua + `<p>Bài 4: In hoa chuỗi: ${inHoaChuoi("Xin ", "Chào", " Thầy", " Và", " Các Bạn")}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 5: s2 có tồn tại trong s1 hay không: ${coTonTai("Hello World", "World")}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 6: Đếm chuỗi: ${demChuoi("Xin ", "Chào", " Thầy", " Và", " Các Bạn")}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài 7: Cắt chuỗi con: ${catChuoiCon("Xin ", "Chào", " Thầy", " Và", " Các Bạn")}</p>`;
+        nodeKetQua.innerHTML = htmlKetQua;
+    </script>
+</body>
+</html>

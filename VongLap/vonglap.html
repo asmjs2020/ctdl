@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập vòng lặp</title>
+    <meta name="description" 
+    content="https://github.com/hohieuit/javascript-coban?fbclid=IwAR0XShskZ1tO9pNJAQJUNbzwS4VabW84rbsjU0TOdQo0Qk2gnhpRa_djG7s">
+    <script src="vonglap.js"></script>
+</head>
+<body>
+    <div id="KetQua">
+
+    </div>
+    <script>
+        var nodeKetQua = document.getElementById("KetQua");
+        var htmlKetQua = "";
+        htmlKetQua = htmlKetQua + `<h3>Bài Tập Về Vòng Lặp</h3>`;
+        htmlKetQua = htmlKetQua + `<p>Bài1: Tổng từ 1 đến 100 là: ${tinhTongTu1DenN(100)}<br> Tổng từ 1 đến 500 là: ${tinhTongTu1DenN(500)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài2: Tổng từ 1 đến 100 là: ${tinhTongTuADenB(1,100)}<br> Tổng từ 20 đến 76 là: ${tinhTongTuADenB(20,76)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài3: Tổng các số lẻ từ 1 đến 100 là: ${tinhTongCacSoLeTuADenB(1,100)}<br> Tổng các số lẻ từ 20 đến 76 là: ${tinhTongCacSoLeTuADenB(20,76)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài4: Xuất ra 100 số lẻ gần nhất: ${listOdd(100)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài5: Xuất ra 57 số lẻ gần nhất bắt đầu từ 1005: ${listOddAToB(1005,57)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài6: Kiểm tra số 3 có phải số nguyên tố hay không.<br> ${isPrime(3)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài7: Xuất ra 20 số nguyên tố nhỏ nhất: ${listPrime(20)}</p>`;
+        htmlKetQua = htmlKetQua + `<p>Bài8: Xuất ra 20 số nguyên tố nhỏ nhất bắt đầu từ 1000: ${listPrimeToFrom(1000,20)}</p>`;
+        //Ghi kết quả ra màn hình
+        nodeKetQua.innerHTML = htmlKetQua;
+    </script>
+</body>
+</html>
